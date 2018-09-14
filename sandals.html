@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sandals</title>
+		<link rel="icon" type="image/jpg" href="img/airmax.jpg">
+		<link rel="icon" type="image/jpeg" href="img/ass8.jpeg">
+	<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 20px;
+  padding: 11px;
+  border:1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  backgrxound-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+</style>
+	</head>
+	<body>	
+		<p><i align="center"> <font face="verdana" color="#A52A2A"  font size="6px"> Welcome to Menshoes where shopping is made easy!</font></i> 
+		<hr <font face="verdana" color="#32CD32"/>
+		<body style="background-color:#FFDAB9;">
+		<nav>
+			<a href="project.html/"><button> Home </button> </a>	
+			<a href="contact.html/"> <button> Contact us </button> </a>
+			<a href="about.html"><button> About us </button> </a>
+			<a href="about.html"><button> Help </button> </a>
+			<a href="privacy policy.html"><button> privacy policy </button> </a>
+		</nav>
+		<hr <font face="verdana" color="#32CD32"/>
+		</hr>
+	<div class="row">
+  		<div class="left">
+		<img src="img/sandal 1.jpeg" style="width:310px;height:228px;"/> 
+		<p> <b> Price:<del>$80</del> $65 </b> <br> </p>
+		 <select>
+ 			<option value="Qty">Qty</option>
+ 			<option value="1">1</option>
+  			<option value="2">2</option>
+  			<option value="3">3</option> </p>
+		</select> 
+		<p> <button> CALL TO ORDER</button> </p>
+		</div>
+	<div>
+		<p align="center"> <img src="img/sandal 2.jpeg" style="width:310px;height:228px;"/> </p>
+		<p><b> Price:<del>$70</del>$75 </b></p>
+		<select>
+ 			<option value="Qty">Qty</option>
+ 			<option value="1">1</option>
+  			<option value="2">2</option>
+  			<option value="3">3</option> </p>
+		</select> 
+		<p> <button> CALL TO ORDER</button> </p>
+  	</div>
+	<div align="right">
+		<img src="img/sandal 5.png" style="width:310px;height:228px;"/>
+		<p> <b> Price:<del>$75</del> $45 </b> </p>
+		<select>
+ 			<option value="Qty">Qty</option>
+ 			<option value="1">1</option>
+  			<option value="2">2</option>
+  			<option value="3">3</option> </p>
+		</select> 
+		<p> <button> CALL TO ORDER</button> </p>
+  	</div>
+	</div>
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("mySearch");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myMenu");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+ a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+<br>
+		<footer style="background-color:grey;">
+			<div align="center">
+				<b> <font face="verdana" color="#A52A2A"> Maleshoes is optimized for selling of quality shoes at an affordable price </font></b>
+			</div>
+			<a href="www.facebook.com"/Ripped-Chilli Restaurant target="blank">
+				<p align ="center"> <img src ="img/facebook.png" width="3%" height="2%">
+			</a>
+	       		<a href="www.twitter.com"/Ripped-Chilli Restaurant target="blank">
+	       			<img src ="img/twitter.png" width="3%" height="2%">
+			</a>
+	       		<a href="www.instagram.com"/Ripped-Chilli Restaurant target="blank">
+	       		<img src ="img/instagram.jpg" width="3%" height="2%"> </p> </a>		  
+			<p align ="center"> &copy 2018 Menshoes. Developed by Akinkuotu Subomi. All Rights Resevered.</p>
+		</footer>
+	</body>
+</html>
